@@ -33,3 +33,44 @@ listabool = [True ,False,  True, False,True ]
 -- `elem`
 --zip 
 -- !!
+-- listak listaja 
+
+listainlista :: [[Int]]
+listainlista = [[1,2,2,2,4],[2,3,4,6,7]]
+
+--Listagenerator 
+
+egyhusz :: [Int]
+egyhusz = [1..20]
+
+kisk:: [Char]
+kisk = ['a'..'k']
+
+nagyk:: [Char]
+nagyk = ['A'..'Z']
+
+--20-ig paros szamok
+
+evento20 :: [Int]
+evento20 = [x*2|x<-[1..10]]
+
+
+evento20b :: [Int]
+evento20b = [x|x<-[1..20],even x]
+
+--evenfrom12::[Int]
+--evenfrom12 [x| x<-[1..20],even x ,x>=12]
+
+divfive::[Int]
+divfive = [ x | x <- [1..100], x `mod` 7 ==5]
+
+
+diveleven::[Int]
+diveleven = [ x | x <- [1..1000], x `mod` 11 ==0]
+
+
+divsix::[Int]
+divsix = [ x | x <- [16..144], x `mod` 6 ==0,x `mod` 4 /=0]
+
+multiplyList :: [Int]
+multiplyList = [x*y | x<-[1,2,3], y<-[3,4,5]]
