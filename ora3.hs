@@ -74,3 +74,15 @@ divsix = [ x | x <- [16..144], x `mod` 6 ==0,x `mod` 4 /=0]
 
 multiplyList :: [Int]
 multiplyList = [x*y | x<-[1,2,3], y<-[3,4,5]]
+
+removeuppercase ::  [Char] -> [Char] 
+removeuppercase st = [c | c <- st, c `elem` ['a'..'z']]
+
+mtx1 :: (Int,Int,Int)
+mtx1 = (1,2,4)
+
+mtx2 :: (Int,Int,Int)
+mtx2 = (4,6,9)
+
+multiplytuple :: (Int,Int,Int) ->(Int,Int,Int) -> (Int,Int,Int)
+multiplytuple (x,y,z) (x1,y1,z1) = (x*x1,y*y1,z*z1)
