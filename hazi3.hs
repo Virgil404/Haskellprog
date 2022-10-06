@@ -1,6 +1,6 @@
 module Hazi3 where
 
- putIntoList :: Int -> [Int]
+ putIntoList ::a -> [a]
  putIntoList a = [a]
 
  interval :: Int -> Int -> [Int]
@@ -9,8 +9,8 @@ module Hazi3 where
  headTail :: [Int] -> (Int, [Int])
  headTail  a = (head a, tail a)
  
- doubleHead :: [Int] -> [Int] -> (Int, Int)
+ doubleHead :: [Int] -> [Char] -> (Int, Char)
  doubleHead a b = (head a, head b)
- 
+
  divFive :: [Int]
- divFive=[ x | x <- [16..144], even x,x `mod` 5 ==0]
+ divFive=[ x | x <- [4..144], even x,x `mod` 5 ==0]
