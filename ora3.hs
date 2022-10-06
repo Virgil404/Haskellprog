@@ -86,3 +86,7 @@ mtx2 = (4,6,9)
 
 multiplytuple :: (Int,Int,Int) ->(Int,Int,Int) -> (Int,Int,Int)
 multiplytuple (x,y,z) (x1,y1,z1) = (x*x1,y*y1,z*z1)
+
+
+threeven::[Int]
+threeven = [ x | x <- [1..30], x `mod` 3 ==0,x `mod` 2 ==0]
