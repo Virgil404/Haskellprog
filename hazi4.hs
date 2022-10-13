@@ -3,8 +3,6 @@ module Hazi4 where
 
 task1 :: [Int] -> [Int]
 task1 a= [x|x<-a, x `mod`3==0,even x, x>10 ,x<100]
-
-
 task2 :: String -> String
 task2 a=[x|x<-a,x/='y',x/='Y']
 
