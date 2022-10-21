@@ -1,4 +1,3 @@
-{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 module ZH2 where 
 --1
 -- egy függyvényt aminek több argumentuma van feloszt több kisebb függvényre pl 
