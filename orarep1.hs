@@ -45,4 +45,13 @@ isODD2 :: Int -> Bool
 isODD2 a = not(isEven a )
 
 
+greater :: Int -> Int ->Bool
+greater a b = a>b 
+
+
+area :: Num a => a ->a -> a 
+area a b = a* b
+
+
+
 
