@@ -66,3 +66,6 @@ module Orarep3 where
 
     someLetter :: [Char]
     someLetter = [x | x<-['A'..'k'], elem x ['A'..'K'] || elem x ['Q'..'Z']]
+
+
+   
